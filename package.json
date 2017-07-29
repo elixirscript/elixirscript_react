@@ -1,0 +1,24 @@
+{
+  "name": "elixirscript_react",
+  "version": "1.0.0",
+  "description": "**TODO: Add description**",
+  "main": "src/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "node rollup.build.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "^1.6.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "rollup": "^0.45.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  }
+}
