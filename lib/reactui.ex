@@ -9,7 +9,7 @@ defmodule ReactUI do
   @external_resource tags_path = Path.join([__DIR__, "tags.txt"])
 
   @tags (for line <- File.stream!(tags_path, [], :line) do
-    line |> String.strip |> String.to_atom
+    line |> String.trim |> String.to_atom
   end)
 
   for tag <- @tags do
@@ -28,7 +28,7 @@ defmodule ReactUI do
     defmacro unquote(tag)(attrs \\ []) do
       tag = Atom.to_string(unquote(tag))
 
-      { inner, attributes } = Dict.pop(attrs, :do)
+      { inner, attributes } = Keyword.pop(attrs, :do)
       { inner, attributes } = do_tag(inner, attributes)
 
       quote do

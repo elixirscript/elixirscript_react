@@ -19,7 +19,7 @@ defmodule ElixirScriptReact.Mixfile do
 
   defp deps do
     [
-      {:elixir_script, git: "git@github.com:elixirscript/elixirscript.git", ref: "72b8adea911569667901ed9d38a0a52ddaa8fc0f"},
+      {:elixir_script, git: "git@github.com:elixirscript/elixirscript.git"},
     ]
   end
 end

@@ -1,3 +1,3 @@
-%{"elixir_script": {:git, "git@github.com:elixirscript/elixirscript.git", "72b8adea911569667901ed9d38a0a52ddaa8fc0f", [ref: "72b8adea911569667901ed9d38a0a52ddaa8fc0f"]},
+%{"elixir_script": {:git, "git@github.com:elixirscript/elixirscript.git", "4666746253c8d4d5affa61c66f3878bdd9cb6425", []},
   "estree": {:hex, :estree, "2.6.0", "86a301b0c355fa55c19e7ef9dceb1b1e983c6df526a2b7846818a38c258fc3fb", [], [], "hexpm"},
   "fs": {:hex, :fs, "3.4.0", "6d18575c250b415b3cad559e6f97a4c822516c7bc2c10bfbb2493a8f230f5132", [], [], "hexpm"}}
