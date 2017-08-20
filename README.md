@@ -36,7 +36,7 @@ by adding `elixir_script_react` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:elixir_script_react, "~> x.x"}
+    {:elixir_script_react, "~> 1.0.1-react"}
   ]
 end
 ```
