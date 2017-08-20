@@ -1,8 +1,11 @@
-defmodule ReactUI do
+defmodule React.HTML do
+  @moduledoc """
+  Defines macros for creating React HTML elements.
+  """
 
   defmacro __using__(_) do
     quote do
-      import ReactUI
+      import React.HTML
     end
   end
 

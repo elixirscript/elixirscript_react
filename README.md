@@ -5,7 +5,7 @@ A library for using React with ElixirScript
 ## Example
 
 ```elixir
-  use ReactUI
+  use React.HTML
 
   def my_section()
     section id: "todoapp" do
