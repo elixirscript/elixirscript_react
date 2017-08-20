@@ -1,6 +1,6 @@
 # ElixirScriptReact
 
-A library for using React with ElixirScript
+A library for using [React](https://facebook.github.io/react/) with ElixirScript
 
 ## Example
 

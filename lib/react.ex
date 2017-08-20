@@ -1,6 +1,6 @@
 defmodule React do
   @moduledoc """
-  FFI Module for interacting with the React
+  FFI Module for interacting with the [React](https://facebook.github.io/react/)
   JavaScript module.
   """
   use ElixirScript.FFI
@@ -9,7 +9,7 @@ defmodule React do
   Creates a React Element
 
   ```elixir
-  props = ElixirScript.JS.map_to_object(%{"hello" => world})
+  props = %{"hello" => world}
   children = []
 
   React.createElement("div", props, children)
