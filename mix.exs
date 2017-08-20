@@ -22,18 +22,19 @@ defmodule ElixirScriptReact.Mixfile do
   defp deps do
     [
       {:elixir_script, "~> 0.30"},
+      {:ex_doc, "~> 0.16", only: :dev}
     ]
   end
 
   defp description do
     """
-    React Library for ElixirScript
+    React library for ElixirScript
     """
   end
 
   defp package do
     [
-      files: ["lib", "priv/**/*.*", "mix.exs", "README.md", "LICENSE", "CHANGELOG.md"],
+      files: ["lib", "priv/**/*.*", "mix.exs", "README.md"],
       maintainers: ["Bryan Joseph"],
       licenses: ["MIT"],
       links: %{
