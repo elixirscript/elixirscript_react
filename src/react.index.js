@@ -3,7 +3,7 @@ import React from 'react';
 function mapToObject(map) {
   const object = {};
 
-  for ([key, value] of map.entries()) {
+  for (const [key, value] of map.entries()) {
     if (value instanceof Map) {
       object[key] = mapToObject(value);
     } else {

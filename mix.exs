@@ -4,7 +4,7 @@ defmodule ElixirScriptReact.Mixfile do
   def project do
     [
       app: :elixir_script_react,
-      version: "1.0.1-react.15.6.1",
+      version: "1.0.2-react.15.6.1",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       deps: deps(),
