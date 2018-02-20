@@ -4,8 +4,8 @@ defmodule ElixirScriptReact.Mixfile do
   def project do
     [
       app: :elixir_script_react,
-      version: "1.0.2-react.15.6.1",
-      elixir: "~> 1.5",
+      version: "16.2.0",
+      elixir: "~> 1.6",
       start_permanent: Mix.env == :prod,
       deps: deps(),
       package: package(),
@@ -21,8 +21,8 @@ defmodule ElixirScriptReact.Mixfile do
 
   defp deps do
     [
-      {:elixir_script, "~> 0.30"},
-      {:ex_doc, "~> 0.16", only: :dev}
+      {:elixir_script, "~> 0.32"},
+      {:ex_doc, "~> 0.18", only: :dev}
     ]
   end
 

@@ -13,42 +13,44 @@ const plugins = [
         'env',
         {
           targets: {
-            node: 'current'
+            node: 'current',
           },
           modules: false,
-          loose: true
-        }
-      ]
-    ]
-  })
+          loose: true,
+        },
+      ],
+    ],
+  }),
 ];
 
-rollup
-  .rollup({
-    entry: 'src/react.index.js',
-    dest: 'priv/elixir_script/react.js',
-    sourceMap: 'inline',
-    format: 'es',
-    plugins: plugins
-  })
-  .then(bundle => {
-    bundle.write({
-      format: 'es',
-      dest: 'priv/elixir_script/react.js'
-    });
-  });
+async function build() {
+  let inputOptions = {
+    input: 'src/react.index.js',
+    plugins: plugins,
+  };
 
-rollup
-  .rollup({
-    entry: 'src/react_dom.index.js',
-    dest: 'priv/elixir_script/react_dom.js',
-    sourceMap: 'inline',
+  let outputOptions = {
     format: 'es',
-    plugins: plugins
-  })
-  .then(bundle => {
-    bundle.write({
-      format: 'es',
-      dest: 'priv/elixir_script/react_dom.js'
-    });
-  });
+    file: 'priv/elixir_script/react.js',
+    sourcemap: 'inline',
+  };
+
+  let bundle = await rollup.rollup(inputOptions);
+  await bundle.write(outputOptions);
+
+  inputOptions = {
+    input: 'src/react_dom.index.js',
+    plugins: plugins,
+  };
+
+  outputOptions = {
+    format: 'es',
+    file: 'priv/elixir_script/react_dom.js',
+    sourcemap: 'inline',
+  };
+
+  bundle = await rollup.rollup(inputOptions);
+  await bundle.write(outputOptions);
+}
+
+build();

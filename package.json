@@ -13,12 +13,15 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "babel-preset-env": "^1.6.0",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "rollup": "^0.45.2",
-    "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-commonjs": "^8.0.2",
-    "rollup-plugin-node-resolve": "^3.0.0"
+    "babel-preset-env": "^1.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "rollup": "^0.56.2",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-node-resolve": "^3.0.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0"
   }
 }
