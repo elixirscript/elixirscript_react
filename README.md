@@ -36,7 +36,7 @@ by adding `elixir_script_react` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:elixir_script_react, "~> 1.0.1-react"}
+    {:elixir_script_react, "~> 16.2.0"}
   ]
 end
 ```
@@ -44,4 +44,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/elixir_script_react](https://hexdocs.pm/elixir_script_react).
-
